@@ -1,0 +1,22 @@
+def sequencia_fibonacci(n):
+    a, b = 0, 1
+    while b < n:
+        a, b = b, a + b
+    if b == n:
+        return True
+    else:
+        return False
+
+while True:
+    eqt = input("Digite P para começar e S para sair: ").upper()
+    if eqt == "P":
+        n = int(input("Digite um número a ser verificado: "))
+        if sequencia_fibonacci(n):
+            print(f"O número {n} pertence à sequência de Fibonacci.")
+        else:
+            print(f"O número {n} não pertence à sequência de Fibonacci.")
+    elif eqt == "S":
+        break
+    else:
+        print("Opção inválida. Por favor, digite P para começar ou S para sair.")
+
