@@ -1,0 +1,12 @@
+#Exercicio 5
+
+def invert_str(texto):
+    texto_invertido = ""
+    for caracter in texto:
+        texto_invertido = caracter + texto_invertido
+    return texto_invertido
+
+str_original = input("Digite uma string: ")
+str_invertida = invert_str(str_original)
+print("String original:", str_original)
+print("String invertida:", str_invertida)
